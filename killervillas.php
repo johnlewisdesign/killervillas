@@ -1,5 +1,5 @@
 function  killer_villas () {
-			$bedrooms = ($_GET["beds"]);
+			$bedrooms = filter_var($_GET["beds"], FILTER_SANITIZE_STRING);
 			echo '</div></div>';
 			echo '<div class="tags" style="clear:both">';
 			echo '<div class="liverefresh">';
